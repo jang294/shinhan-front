@@ -15,8 +15,8 @@ pipeline {
         stage('build') {
             steps {
                         sh 'ls -al'
-                        sh "yarn install"
-                        sh "CI=false yarn build"
+                        sh "npm install"
+                        sh "CI=false npm build"
             }
         }
         stage('deploy') {
