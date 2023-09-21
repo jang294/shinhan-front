@@ -14,11 +14,9 @@ pipeline {
         }
         stage('build') {
             steps {
-                    dir('myapp'){
                         sh 'ls -al'
                         sh "yarn install"
                         sh "CI=false yarn build"
-                }
             }
         }
         stage('deploy') {
