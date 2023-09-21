@@ -1,16 +1,13 @@
+import "./styles/react.css"
+import "./styles/global.css"
+import TopNav from "./components/TopNav/TopNav";
+import Home from "./pages/Home/Home";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div> 안녕 세상아 ~~ </div>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-      </header>
+    <div className="layout">
+      <TopNav />
+      <Home />
     </div>
   );
 }
